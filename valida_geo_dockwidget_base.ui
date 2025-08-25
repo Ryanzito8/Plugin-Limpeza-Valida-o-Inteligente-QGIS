@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ValidaGeoDockWidgetBase</class>
+ <widget class="QDockWidget" name="ValidaGeoDockWidgetBase">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>431</width>
+    <height>388</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Limpeza e Validação Inteligente</string>
+  </property>
+  <widget class="QWidget" name="dockWidgetContents">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QGroupBox" name="validationGroupBox">
+      <property name="title">
+       <string>Opções de Validação</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QCheckBox" name="geometryCheckBox">
+         <property name="text">
+          <string>Verificar Geometrias Inválidas</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="overlapsCheckBox">
+         <property name="text">
+          <string>Verificar Sobreposições</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QCheckBox" name="duplicatesCheckBox">
+         <property name="text">
+          <string>Verificar Duplicatas</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="validateButton">
+         <property name="text">
+          <string>Validar Camada Selecionada</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="correctAllButton">
+         <property name="text">
+          <string>Corrigir Erros</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTableWidget" name="errorsTableWidget">
+      <column>
+       <property name="text">
+        <string>ID da Feição</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Tipo de Erro</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Descrição</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Camada Alvo</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="layerComboBox"/>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
